@@ -1,0 +1,117 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+#navbar {
+    height: 16vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#navbar > a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    margin-left: 1vw;
+    margin-right: 4vw;
+    margin-top: -6vh;
+}
+
+#main {
+    height: 100%;
+    display: flex;
+}
+
+#brand_name {
+    margin-top: 12vh;    /* 調整置中 */
+    margin-left: 5.5vw;
+    width: 40%;
+}
+
+#brand_name_zh {
+    margin-bottom: -1.2vh;  /* 可以調整品牌名稱中間的空隙 */
+    font-weight: 500;
+    font-size: 5.3rem;
+    letter-spacing: 1.5rem;
+    color:#585154;
+}
+
+#brand_name_en {
+    font-weight: 500;
+    font-size: 2.2rem;
+    letter-spacing: 0.3rem;
+    transform: scale(1, 1.1);
+    transform-origin: 0;
+    color:#585154;
+    margin-left: 0.3rem;
+}
+
+#eggroll_img {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    padding-right: 10%;
+    left: 45vw;
+    right: 0;
+    padding-top: 10vh;
+
+}
+
+#green_eggroll  { 
+    background-image: url(./res/green_eggroll.png);  
+    transform: rotate(-25deg);
+    height: 700px;
+    width: 25%;
+}
+#yellow_eggroll { 
+    background-image: url(./res/yellow_eggroll.png); 
+    transform: rotate(-15deg);
+    height: 700px;
+    width: 25%;
+    margin-top: -2vh;
+    margin-left: -6vw;
+    margin-right: -6vw;
+}
+#purple_eggroll { 
+    background-image: url(./res/purple_eggroll.png); 
+    transform: rotate(-5deg);
+    height: 700px;
+    width: 25%;
+    margin-right: -4vw;
+}
+#only_eggroll   { 
+    background-image: url(./res/only_eggroll.png); 
+    transform: rotate(18deg); 
+    height: 700px;
+    width: 25%; 
+}
+
+#green_eggroll, #yellow_eggroll, #purple_eggroll, #only_eggroll {
+    background-position: center top;
+    background-size: 280%;
+}
+
+#arrow  {
+    width: 100px;
+    position: absolute;
+    right: 5vw;
+    transform: rotate(5deg);
+}
+
+#homepage_background {
+    background-color: #f9e3ca;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
