@@ -5,10 +5,12 @@ html {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: hidden;
+    z-index: 0;
 }
 
 
 #navbar {
+    z-index: 5;
     height: 16vh;
     display: flex;
     align-items: center;
@@ -118,16 +120,55 @@ html {
 }
 
 
-/* item_choose */
 
-#banner_shape {
+
+
+
+
+
+/* item_choose */
+#item_choose {
+    z-index: 10;
     position: absolute;
-    background-image: url(./res/running_eggroll_with_banner.png);
-    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    right: -100vw;
+}
+
+#banner {
+    position: absolute;
     right: 0;
     top: 15vh;
     height: 70vh;
     width: 95vw;  /* 控制蛋捲位置 */
+}
+
+#banner_whole {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#state_eggroll {
+    position: absolute;
+    background-image: url(./res/running_eggroll.png);
+    background-size: cover;
+    height: 100%;
+    width: 20%;
+    left: 0;
+}
+
+#banner_shape {
+    z-index: -1;
+    position: absolute;
+    background-image: url(./res/banner_shape.svg);
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    top: 10%;
+    left: 3%;
 }
 
 #item_name {
@@ -170,8 +211,6 @@ html {
 #single_item_input[type='text'], #set_item_input[type='text'] {
     font-size: 2rem;
     color: #291b1d;
-    font-style: italic;
-    font-family: 'Pacifico', cursive;
     caret-color: transparent;
 }
 
@@ -193,6 +232,5 @@ html {
     border-radius: 100vw; 
     color: #291b1d;
     /* background-color: #ffffff; */
-    font-family: serif;
     padding-bottom: 0.5vh;
 }

@@ -26,15 +26,18 @@
         <div id="green_eggroll"></div>
         <div id="yellow_eggroll"></div>
         <div id="purple_eggroll"></div>
-        <div id="only_eggroll" onclick="window.open('./dancingeggroll_item.html');"></div>
+        <div id="only_eggroll"></div>
       </div>
       <img src="./res/arrow.png" alt="箭頭" id="arrow" />
     </div>
 
     <!-- item_choose -->
-    <div class="item_choose">
-      <div class="gaussblur"></div>
-      <div id="banner_shape">
+    <div id="item_choose">
+      <div id="banner">
+        <div id="banner_whole">
+          <div id="state_eggroll"></div>
+          <div id="banner_shape"></div>
+        </div>
         <p id="item_name">經典巧克力蛋捲</p>
         <div id="single_item">
           <p id="single_item_option">單盒</p>
@@ -45,9 +48,12 @@
           <input id="set_item_input" type="text" />
         </div>
         <p id="amount_tag">數量</p>
-        <button id="check_button" onclick="window.open('./dancingeggroll.html');">完成選購</button>
+        <button id="check_button">完成選購</button>
       </div>
     </div>
     <!--  -->
+
+    <script src="./anime.min.js"></script>
+    <script src="./dancingeggroll.js"></script>
   </body>
 </html>
